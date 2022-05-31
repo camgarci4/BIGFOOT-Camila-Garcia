@@ -10,7 +10,7 @@ body {
     background-color: rgb(221, 185, 255);
 }
 
-.contenedorGrid{
+.contenedorGrid {
     width: 100%;
     font-family: 'Monserat', sans-serif;
     display: grid;
@@ -18,7 +18,7 @@ body {
     grid-template-rows: 70px auto 330px;
 }
 
-.container{
+.container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -125,7 +125,8 @@ nav ul li a {
 nav ul li a:hover {
     color: black;
 }
-.nombre-empresa{
+
+.nombre-empresa {
     font-size: 30px;
     font-weight: bolder;
 }
@@ -206,7 +207,8 @@ footer {
     padding: 10px;
 }
 
-#punto {
+#punto,
+#punto-dos {
     list-style-type: none;
     justify-content: flex-start;
 }
@@ -244,3 +246,105 @@ p {
 }
 
 
+
+@media screen and (max-width: 780px) {
+
+    .contenedorGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px auto auto;
+    }
+
+    .containerCard {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        flex-flow: column;
+    }
+
+    .card {
+        width: 90%;
+        margin: 15px;
+    }
+
+    .card .contenido h2 {
+        font-size: 17px;
+    }
+
+    .card .contenido p {
+        font-size: 16px;
+    }
+
+    .card .contenido ul {
+        font-size: 16px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 3px 8px;
+    }
+
+    footer {
+        flex-flow: column;
+    }
+
+    #punto-dos {
+        flex-flow: column;
+        justify-content: flex-start;
+    }
+
+    #columnUbi {
+        padding-left: 30px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .nombre-empresa {
+        display: none;
+    }
+
+    .nombre-empresaMobile {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+
+        #menu {
+            display: none;
+        }
+
+        #check {
+            display: flex;
+        }
+
+        .checkbtn {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 10px;
+        }
+
+        table,
+        th,
+        td {
+            padding: 10px 35px 5px 35px;
+            font-size: 14px;
+        }
+
+        img {
+            width: 400px;
+        }
+
+
+    }
