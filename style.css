@@ -304,9 +304,14 @@ p {
         display: none;
     }
 
+    .logo {
+        display: none;
+    }
+
     .nombre-empresaMobile {
         display: flex;
-        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 10px;
     }
 
     table,
@@ -318,6 +323,12 @@ p {
     h2 {
         font-size: 20px;
     }
+
+    .ig, .fb {
+        justify-content: flex-start;
+    }
+
+}
 
     @media screen and (max-width: 480px) {
 
@@ -345,6 +356,4 @@ p {
         img {
             width: 400px;
         }
-
-
     }
