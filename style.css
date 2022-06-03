@@ -201,17 +201,27 @@ th {
     padding-top: 10px;
 }
 
-button {
-    font-weight: 600;
-    padding: 5px 15px;
-    border-radius: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+div .button button {
+    border: none;
+    background-color: white;
+    color: black;
 }
 
-button:hover {
+div .button button:hover {
     background-color: rgb(175, 93, 156);
 }
+
+div .btn-group button {
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+div .btn-group button:hover {
+    background-color: rgb(175, 93, 156);
+}
+
+
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
