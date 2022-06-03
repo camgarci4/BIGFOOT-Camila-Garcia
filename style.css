@@ -1,18 +1,16 @@
 * {
     box-sizing: border-box;
-    font-family: 'Monserat', sans-serif;
-    text-decoration: none;
-    max-width: 1600px;
+    margin: 0;
 }
 
 body {
-    margin: 0;
     background-color: rgb(221, 185, 255);
+    max-width: 1600px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contenedorGrid {
     width: 100%;
-    font-family: 'Monserat', sans-serif;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 70px auto 330px;
@@ -55,10 +53,15 @@ body {
     text-align: center;
 }
 
+.card .contenido p {
+    font-weight: 400;
+    font-size: 19px;
+}
+
 .card .contenido a {
     display: inline-block;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
     border: 1px solid rgb(175, 93, 156);
     border-radius: 4px;
     transition: all 400ms ease;
@@ -71,18 +74,32 @@ body {
 
 .card .contenido ul {
     text-align: start;
-    font-size: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.card .contenido h2 {
+    font-size: 25px;
 }
 
 .nombre {
     font-size: 20px;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
     padding: 3%;
 }
 
 img {
     width: 600px;
+}
+
+/* CAROUSEL */
+
+
+.containerIndex {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 400px;
 }
 
 /* HEADER */
@@ -95,44 +112,42 @@ header {
     width: 100%;
 }
 
-nav {
+#menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
 }
 
+
 nav ul {
-    display: flex;
-    float: right;
     justify-content: space-between;
     align-items: center;
-    margin-right: 10px;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 5px;
 }
 
 nav ul li a {
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
     padding: 7px 13px;
     font-weight: 600;
     color: rgb(175, 93, 156);
 }
 
-nav ul li a:hover {
-    color: black;
-}
-
 .nombre-empresa {
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 40px;
+    font-weight: 900;
 }
 
 a {
     color: rgb(175, 93, 156);
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
 }
 
 .nombre-empresa:hover {
@@ -140,7 +155,9 @@ a {
 }
 
 .nombre-empresaMobile {
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 900;
+    padding: 5px;
     display: none;
 }
 
@@ -176,8 +193,15 @@ td {
     font-size: 20px;
 }
 
+th {
+    font-weight: 600;
+}
+
+.talles {
+    padding-top: 10px;
+}
+
 button {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     padding: 5px 15px;
     border-radius: 3px;
@@ -189,6 +213,11 @@ button:hover {
     background-color: rgb(175, 93, 156);
 }
 
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: black;
+}
+
 section {
     font-size: 18px;
     display: flex;
@@ -197,6 +226,20 @@ section {
     padding-bottom: 30px;
 }
 
+.contacto p {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.contacto label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contacto h4 {
+    font-size: 23px;
+    font-weight: 600;
+}
 
 /* PIE DE PAGINA */
 
@@ -230,14 +273,12 @@ footer {
 }
 
 h2 {
+    font-weight: 600;
     text-align: center;
     padding-bottom: 15px;
+    padding-top: 15px;
 }
 
-p {
-    font-size: 20px;
-    font-weight: 300;
-}
 
 .selector {
     display: flex;
@@ -278,7 +319,7 @@ p {
     }
 
     nav ul li a {
-        font-size: 16px;
+        font-size: 17px;
         padding: 3px 8px;
     }
 
@@ -311,7 +352,6 @@ p {
     .nombre-empresaMobile {
         display: flex;
         justify-content: flex-start;
-        padding: 10px;
     }
 
     table,
@@ -324,36 +364,37 @@ p {
         font-size: 20px;
     }
 
-    .ig, .fb {
+    .ig,
+    .fb {
         justify-content: flex-start;
     }
 
 }
 
-    @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
-        #menu {
-            display: none;
-        }
-
-        #check {
-            display: flex;
-        }
-
-        .checkbtn {
-            display: flex;
-            justify-content: flex-end;
-            padding-right: 10px;
-        }
-
-        table,
-        th,
-        td {
-            padding: 10px 35px 5px 35px;
-            font-size: 14px;
-        }
-
-        img {
-            width: 400px;
-        }
+    #menu {
+        display: none;
     }
+
+    #check {
+        display: flex;
+    }
+
+    .checkbtn {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+
+    table,
+    th,
+    td {
+        padding: 10px 35px 5px 35px;
+        font-size: 14px;
+    }
+
+    img {
+        width: 400px;
+    }
+}
