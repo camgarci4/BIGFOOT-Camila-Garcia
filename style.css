@@ -161,20 +161,12 @@ a:hover {
     display: none;
 }
 
-#check {
-    display: none;
-}
-
-.checkbtn {
-    font-size: 30px;
-    color: rgb(175, 93, 156);
-    line-height: 60px;
-    cursor: pointer;
-    display: none;
-}
-
 .logo {
     padding-left: 10px;
+}
+
+#navbar {
+    display: none;
 }
 
 /* MAIN */
@@ -387,16 +379,6 @@ h2 {
         display: none;
     }
 
-    #check {
-        display: flex;
-    }
-
-    .checkbtn {
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 10px;
-    }
-
     table,
     th,
     td {
@@ -406,5 +388,21 @@ h2 {
 
     img {
         width: 400px;
+    }
+
+    #navbar {
+        display: flex;
+    }
+
+    button .navbar-toggler {
+            border: none;
+    }
+
+    #navbar-ul a {
+        color: rgb(175, 93, 156);
+    }
+
+    #navbar-ul a:hover {
+        color: black;
     }
 }

@@ -22,9 +22,6 @@
         <div class="logo">
             <h1 class="nombre-empresa"><a href="../index.html">B I G F O O T</a></h1>
         </div>
-        <div class="lodo-dos">
-            <h1 class="nombre-empresaMobile"><a href="../index.html">BIGFOOT</a></h1>
-        </div>
 
         <nav>
             <ul id="menu">
@@ -32,15 +29,44 @@
                 <li><a href="talles.html">Talles</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-
-            <div class="bars">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fa-solid fa-bars"><a href="#"></a></i>
-                </label>
-            </div>
-
         </nav>
+
+        <nav id="navbar" class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <h1 class="nombre-empresaMobile"><a href="../index.html">BIGFOOT</a></h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Perzonalizá tu remera</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul id="navbar-ul" class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="comprar.html">Comprar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="talles.html">Tabla de talles</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contacto
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="contacto.html">Consultas</a></li>
+                        <li><a class="dropdown-item" href="https://www.instagram.com/bigfootarg">Redes sociales</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
 
     </header>
     <h2>Remeras</h2>
